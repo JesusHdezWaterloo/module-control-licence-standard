@@ -16,10 +16,14 @@ public class LicenceResourceService implements ResourceService {
 
     private final DefaultResourceBundleService resourceService;
 
-    public static LicenceResourceService init() throws MalformedURLException {
-        LicenceResourceService res = new LicenceResourceService();
-        Resource.registerResourceService(res);
-        return res;
+    public static LicenceResourceService init() {
+        try {
+            LicenceResourceService res = new LicenceResourceService();
+            Resource.registerResourceService(res);
+            return res;
+        } catch (Exception e) {
+        }
+        return null;
     }
 
     private LicenceResourceService() throws MalformedURLException {
