@@ -2,10 +2,8 @@ package com.jhw.module.util.licence.core.domain;
 
 import com.jhw.module.util.licence.DIFICULTY;
 import com.jhw.utils.clean.EntityDomainObjectValidated;
-import com.jhw.utils.others.Misc;
 import com.jhw.utils.security.SHA;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
 /**
@@ -15,6 +13,8 @@ import java.time.temporal.ChronoUnit;
  */
 public class LicenceDomain extends EntityDomainObjectValidated {
 
+    private Integer idLicence;
+    private String clientCode;
     /**
      * Token de integridad
      */
@@ -43,14 +43,24 @@ public class LicenceDomain extends EntityDomainObjectValidated {
     public LicenceDomain() {
     }
 
+    public LicenceDomain(long token, LocalDate fechaInicio, LocalDate fechaFin) {
+        this.token = token;
+        this.fechaInicio = fechaInicio;
+        this.fechaUltimoRevisado = fechaInicio;
+        this.fechaFin = fechaFin;
+    }
+
     /**
-     * Constructor por defecto.
      *
-     * @param token Token de integridad
-     * @param fechaActivacion Fecha de inicio de activacion
-     * @param fechaFin Fecha de fin de licencia
+     * @param idLicence
+     * @param clientCode
+     * @param token
+     * @param fechaActivacion
+     * @param fechaFin
      */
-    public LicenceDomain(long token, LocalDate fechaActivacion, LocalDate fechaFin) {
+    public LicenceDomain(Integer idLicence, String clientCode, long token, LocalDate fechaActivacion, LocalDate fechaFin) {
+        this.idLicence = idLicence;
+        this.clientCode = clientCode;
         this.token = token;
         this.fechaInicio = fechaActivacion;
         this.fechaUltimoRevisado = fechaActivacion;
@@ -59,6 +69,22 @@ public class LicenceDomain extends EntityDomainObjectValidated {
 
     public int daysUntilActivation() {
         return (int) ChronoUnit.DAYS.between(fechaUltimoRevisado, fechaFin);
+    }
+
+    public Integer getIdLicence() {
+        return idLicence;
+    }
+
+    public void setIdLicence(Integer idLicence) {
+        this.idLicence = idLicence;
+    }
+
+    public String getClientCode() {
+        return clientCode;
+    }
+
+    public void setClientCode(String clientCode) {
+        this.clientCode = clientCode;
     }
 
     public long getToken() {
@@ -95,7 +121,7 @@ public class LicenceDomain extends EntityDomainObjectValidated {
 
     @Override
     public String toString() {
-        return "LicenceDomain{" + "token=" + token + ", fechaInicio=" + fechaInicio + ", fechaFin=" + fechaFin + ", fechaUltimoRevisado=" + fechaUltimoRevisado + '}';
+        return "LicenceDomain{" + "idLicence=" + idLicence + ", clientCode=" + clientCode + ", token=" + token + ", fechaInicio=" + fechaInicio + ", fechaFin=" + fechaFin + ", fechaUltimoRevisado=" + fechaUltimoRevisado + '}';
     }
 
     /**
