@@ -18,7 +18,13 @@ public class ModuleLicenceConstants {
     //-----------------------LICENCE-----------------------\\
     public static final String LICENCE_LICENCE_GENERAL_PATH = LICENCE_GENERAL_PATH + "/licence";
 
-    //public static final String GASTO_REPORTE_POR_TIPO_PATH = "/reporte_por_tipo";
-    //public static final RequestMethod GASTO_REPORTE_POR_TIPO_METHOD = RequestMethod.GET;
+    public static final String LICENCE_IS_ACTIVE_PATH = "/is_active";
+    public static final RequestMethod LICENCE_IS_ACTIVE_METHOD = RequestMethod.GET;
+
+    public static final String LICENCE_ACTIVE_PATH = "/active";
+    public static final RequestMethod LICENCE_ACTIVE_METHOD = RequestMethod.POST;
+    
+    public static final String LICENCE_DAYS_LEFT_PATH = "/days_left";
+    public static final RequestMethod LICENCE_DAYS_LEFT_METHOD = RequestMethod.GET;
 
 }
