@@ -17,7 +17,7 @@ public interface LicenceUseCase extends CRUDUseCase<LicenceDomain> {
      *
      * @return true si la licencia es correcta, false en cualquier otro caso
      */
-    public boolean isLicenceCorrect();
+    public boolean isActive();
 
     /**
      * Activa la licencia en dependencia de un codigo de activacion cifrado
