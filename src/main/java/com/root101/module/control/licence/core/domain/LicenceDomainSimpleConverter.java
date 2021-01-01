@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.jhw.module.util.licence.core.domain;
+package com.root101.module.control.licence.core.domain;
 
 import com.root101.clean.core.app.repo.Converter;
 import java.time.LocalDate;

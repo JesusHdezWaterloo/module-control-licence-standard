@@ -3,13 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.jhw.module.util.licence;
+package com.root101.module.control.licence.services;
 
 /**
  *
  * @author Jesus Hernandez Barrios (jhernandezb96@gmail.com)
  */
-public class DIFICULTY {
-
-    public static final int VALUE = 4;
+public class ResourceKeys {
+    
 }

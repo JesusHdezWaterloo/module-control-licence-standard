@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.jhw.module.util.licence.core.exception;
+package com.root101.module.control.licence.core.exception;
 
 /**
  *

@@ -1,7 +1,7 @@
-package com.jhw.module.util.licence.core.usecase_def;
+package com.root101.module.control.licence.core.usecase_def;
 
 import com.root101.clean.core.app.usecase.CRUDUseCase;
-import com.jhw.module.util.licence.core.domain.LicenceDomain;
+import com.root101.module.control.licence.core.domain.LicenceDomain;
 
 /**
  * Interfaz del caso de uso de la licencia para definir las principales

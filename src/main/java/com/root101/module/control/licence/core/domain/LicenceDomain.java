@@ -1,6 +1,6 @@
-package com.jhw.module.util.licence.core.domain;
+package com.root101.module.control.licence.core.domain;
 
-import com.jhw.module.util.licence.DIFICULTY;
+import com.root101.module.control.licence.DIFICULTY;
 import com.root101.utils.clean.EntityDomainObjectValidated;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;

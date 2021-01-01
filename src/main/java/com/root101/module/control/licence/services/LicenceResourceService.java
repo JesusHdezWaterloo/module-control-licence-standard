@@ -1,4 +1,4 @@
-package com.jhw.module.util.licence.services;
+package com.root101.module.control.licence.services;
 
 import com.root101.clean.core.domain.services.ResourceHandler;
 import com.root101.clean.core.domain.services.ResourceBundleUtils;
