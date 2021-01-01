@@ -5,8 +5,7 @@
  */
 package com.jhw.module.util.licence.core.domain;
 
-import com.clean.core.app.repo.Converter;
-import com.jhw.utils.services.ConverterService;
+import com.root101.clean.core.app.repo.Converter;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 

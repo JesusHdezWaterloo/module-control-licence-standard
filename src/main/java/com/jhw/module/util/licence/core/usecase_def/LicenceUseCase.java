@@ -1,6 +1,6 @@
 package com.jhw.module.util.licence.core.usecase_def;
 
-import com.clean.core.app.usecase.CRUDUseCase;
+import com.root101.clean.core.app.usecase.CRUDUseCase;
 import com.jhw.module.util.licence.core.domain.LicenceDomain;
 
 /**

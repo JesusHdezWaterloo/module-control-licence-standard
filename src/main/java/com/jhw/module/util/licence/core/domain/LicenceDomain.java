@@ -1,10 +1,10 @@
 package com.jhw.module.util.licence.core.domain;
 
 import com.jhw.module.util.licence.DIFICULTY;
-import com.jhw.utils.clean.EntityDomainObjectValidated;
-import com.jhw.utils.security.SHA;
+import com.root101.utils.clean.EntityDomainObjectValidated;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
+import com.root101.security.SHA;
 
 /**
  * Objeto dominio Licencia.
