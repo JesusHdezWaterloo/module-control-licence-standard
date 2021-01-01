@@ -1,4 +1,4 @@
-rootProject.name = 'module-util-licence-standard'
+rootProject.name = 'module-control-licence-standard'
 
 include ':clean-core'
 project(':clean-core').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\clean-core" as File
