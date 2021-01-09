@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.root101.module.control.licence.core;
+package com.root101.module.control.licence.rest;
 
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @author Root101 (jhernandezb96@gmail.com, +53-5-426-8660)
  * @author JesusHdezWaterloo@Github
  */
-public class ModuleLicenceConstants {
+public class ModuleLicenceRESTConstants {
 
     public static final String LICENCE_GENERAL_PATH = "/licence";
 
@@ -35,7 +35,7 @@ public class ModuleLicenceConstants {
 
     public static final String LICENCE_ACTIVE_PATH = "/active";
     public static final RequestMethod LICENCE_ACTIVE_METHOD = RequestMethod.POST;
-    
+
     public static final String LICENCE_DAYS_LEFT_PATH = "/days_left";
     public static final RequestMethod LICENCE_DAYS_LEFT_METHOD = RequestMethod.GET;
 

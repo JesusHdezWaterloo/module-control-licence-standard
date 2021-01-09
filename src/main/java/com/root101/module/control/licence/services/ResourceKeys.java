@@ -22,5 +22,5 @@ package com.root101.module.control.licence.services;
  * @author JesusHdezWaterloo@Github
  */
 public class ResourceKeys {
-    
+
 }
