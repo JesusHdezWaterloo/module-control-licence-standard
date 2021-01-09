@@ -35,7 +35,7 @@ public class ModuleLicenceRESTConstants {
 
     public static final String LICENCE_ACTIVE_PATH = "/active";
     public static final RequestMethod LICENCE_ACTIVE_METHOD = RequestMethod.POST;
-    
+
     public static final String LICENCE_DAYS_LEFT_PATH = "/days_left";
     public static final RequestMethod LICENCE_DAYS_LEFT_METHOD = RequestMethod.GET;
 
